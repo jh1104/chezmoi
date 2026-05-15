@@ -1,0 +1,22 @@
+[alias]
+  aa = add .
+  sw = switch
+  swm = switch main
+  rs = restore
+  rss = restore --staged
+  st = status -sb
+  br = branch
+  bra = branch --all
+  df = diff
+  dfs = diff --staged
+  sh = show
+  shn = show --name-status
+  lg = log --graph --abbrev-commit
+  lgp = log --abbrev-commit --follow -p
+  la = log --graph --all
+  lo = log --graph --oneline
+  fa = fetch --all
+  faa = fetch --all --prune --prune-tags --force
+  fp = fetch --prune
+  sm = submodule
+

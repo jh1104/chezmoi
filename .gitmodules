@@ -1,0 +1,9 @@
+[submodule "dot_config/tmux/plugins/catppucin/tmux"]
+	path = dot_config/tmux/plugins/catppucin/tmux
+	url = ssh://git@github.com/catppuccin/tmux.git
+[submodule "dot_config/zsh_plugins/zsh-autosuggestions"]
+	path = dot_config/zsh_plugins/zsh-autosuggestions
+	url = ssh://git@github.com/zsh-users/zsh-autosuggestions
+[submodule "dot_config/zsh_plugins/zsh-syntax-highlighting"]
+	path = dot_config/zsh_plugins/zsh-syntax-highlighting
+	url = ssh://git@github.com/zsh-users/zsh-syntax-highlighting.git
