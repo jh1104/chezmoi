@@ -1,0 +1,23 @@
+# ls
+alias l="ls"
+alias ll="ls -lhD ' %Y-%m-%d %H:%M '"
+alias llt="ls -lhtD ' %Y-%m-%d %H:%M '"
+alias la="ls -lahD ' %Y-%m-%d %H:%M '"
+alias lat="ls -lahtD ' %Y-%m-%d %H:%M '"
+
+# ip
+alias ip-list="
+ifconfig | \
+grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | \
+grep -Eo '([0-9]*\.){3}[0-9]*' | \
+grep -v '127.0.0.1'"
+
+# kubernetes
+alias kc="kubectl"
+
+# docker
+alias docker='podman'
+alias images='podman image list --sort repository --format="table {{.Repository}}:{{.Tag}}\t{{.Created}}\t{{.Size}}\t{{.ID}}"'
+alias pods='podman pod list'
+alias containers='podman ps --all --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.ID}}"'
+
