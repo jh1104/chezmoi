@@ -8,8 +8,9 @@ background-opacity = 0.97
 window-theme = dark
 window-height = 32
 window-width = 110
-window-padding-x = 4, 4
-window-padding-y = 0, 4
+window-padding-x = 4, 0
+window-padding-y = 2, 0
+window-step-resize = true
 
 macos-titlebar-style = transparent
 macos-titlebar-proxy-icon = hidden
