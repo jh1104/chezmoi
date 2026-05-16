@@ -1,11 +1,8 @@
 return {
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    priority = 1000,
+    "LazyVim/LazyVim",
     opts = {
-      flavour = "mocha",
-      no_italic = true,
+      colorscheme = "catppuccin",
     },
   },
 }
