@@ -4,10 +4,10 @@
 
 vim.keymap.set("i", "jk", "<esc>", { desc = "exit insert mode with jk" })
 
-vim.keymap.set("n", "<C-e>", "<Home>")
-vim.keymap.set("n", "<C-a>", "<End>")
-vim.keymap.set("i", "<C-e>", "<Home>")
-vim.keymap.set("i", "<C-a>", "<End>")
+vim.keymap.set("n", "<C-e>", "<End>")
+vim.keymap.set("n", "<C-a>", "<Home>")
+vim.keymap.set("i", "<C-e>", "<End>")
+vim.keymap.set("i", "<C-a>", "<Home>")
 
 vim.keymap.set("v", "s", "c")
 vim.keymap.set("n", "s", "cl")
