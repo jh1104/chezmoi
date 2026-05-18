@@ -10,7 +10,7 @@ window-height = 32
 window-width = 110
 window-padding-x = 4, 0
 window-padding-y = 2, 0
-window-step-resize = true
+window-step-resize = false
 
 macos-titlebar-style = transparent
 macos-titlebar-proxy-icon = hidden
@@ -19,7 +19,7 @@ font-family = "FiraCode Nerd Font Mono"
 font-family = "SF Mono"
 font-family = "Noto Sans CJK KR"
 font-size = 13
-font-feature = -calt
+# font-feature = -calt
 
 adjust-cell-height = 5
 
