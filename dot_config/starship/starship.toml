@@ -87,7 +87,7 @@ time_format = "%R" # Hour:Minute Format
 format = '[  $time ]($style)'
 
 [hostname]
-format = '[ $ssh_symbol $hostname ]($style)'
+format = '[ $hostname ]($style)'
 
 # Palette definitions
 [palettes.catppuccin_latte]
