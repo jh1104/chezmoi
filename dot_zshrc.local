@@ -1,0 +1,33 @@
+# default
+export LANG=en_US.UTF-8
+export EDITOR=nvim
+export TERM=xterm-256color
+
+# fzf
+source <(fzf --zsh)
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#363A4F,bg:#24273A,spinner:#F4DBD6,hl:#ED8796 \
+--color=fg:#CAD3F5,header:#ED8796,info:#C6A0F6,pointer:#F4DBD6 \
+--color=marker:#B7BDF8,fg+:#CAD3F5,prompt:#C6A0F6,hl+:#ED8796 \
+--color=selected-bg:#494D64 \
+--color=border:#6E738D,label:#CAD3F5"
+
+# custom alias
+source ~/.alias
+
+# man using bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+# go setting
+export GOPATH="$HOME/.go"
+export GOBIN="${HOME}/.go/bin"
+export PATH=$PATH:$GOBIN
+
+# zsh plugins
+source ~/.zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh_plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# starship
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+eval "$(starship init zsh)"
+
