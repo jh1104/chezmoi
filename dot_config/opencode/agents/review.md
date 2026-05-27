@@ -19,6 +19,7 @@ permission:
     "git show*": allow
     "go test*": allow
     "go vet*": allow
+    "go doc*": allow
   task: deny
   todowrite: deny
 ---
