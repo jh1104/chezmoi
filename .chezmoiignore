@@ -1,5 +1,3 @@
-.config/tmux/plugins/catppuccin/tmux/**/*.sh
-
 {{- if ne .chezmoi.os "darwin" }}
 .config/karabiner/
 {{- end }}

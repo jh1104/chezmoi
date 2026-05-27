@@ -1,9 +1,9 @@
-[submodule "dot_config/tmux/plugins/catppuccin/tmux"]
-	path = dot_config/tmux/plugins/catppuccin/tmux
-	url = https://github.com/catppuccin/tmux.git
-[submodule "dot_config/zsh_plugins/zsh-autosuggestions"]
-	path = dot_config/zsh_plugins/zsh-autosuggestions
-	url = https://github.com/zsh-users/zsh-autosuggestions.git
-[submodule "dot_config/zsh_plugins/zsh-syntax-highlighting"]
-	path = dot_config/zsh_plugins/zsh-syntax-highlighting
+[submodule "dot_zsh_plugins/external_zsh-syntax-highlighting"]
+	path = dot_zsh_plugins/external_zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "dot_zsh_plugins/external_zsh-autosuggestions"]
+	path = dot_zsh_plugins/external_zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "dot_config/tmux/plugins/external_catppuccin/tmux"]
+	path = dot_config/tmux/plugins/external_catppuccin/tmux
+	url = https://github.com/catppuccin/tmux.git
