@@ -5,9 +5,11 @@ return {
       sources = {
         explorer = {
           include = { ".github" },
+          exclude = { "gen" },
         },
         files = {
           hidden = true,
+          exclude = { "gen" },
         },
       },
     },
