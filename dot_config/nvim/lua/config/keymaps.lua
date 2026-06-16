@@ -11,4 +11,4 @@ vim.keymap.set("i", "<C-a>", "<Home>")
 
 vim.keymap.set("v", "s", "c")
 vim.keymap.set("n", "s", "cl")
-vim.keymap.set("n", "S", "cc")
+vim.keymap.set("n", "S", "C")
