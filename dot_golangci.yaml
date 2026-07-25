@@ -1,0 +1,30 @@
+version: "2"
+
+linters:
+  enable:
+    - bodyclose
+    - contextcheck
+    - durationcheck
+    - funcorder
+    - gocognit
+    - gocritic
+    - godot
+    - gosec
+    - modernize
+    - nilerr
+    - nolintlint
+    - revive
+    - sloglint
+    - sqlclosecheck
+    - usetesting
+
+  settings:
+    nolintlint:
+      require-explanation: true
+      require-specific: true
+
+  exclusions:
+    rules:
+      - path: _test\.go
+        linters:
+          - gosec
