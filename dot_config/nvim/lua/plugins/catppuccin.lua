@@ -6,6 +6,7 @@ return {
     opts = {
       flavour = "mocha",
       no_italic = true,
+      transparent_background = true,
       custom_highlights = function(colors)
         return {
           LineNr = { fg = colors.overlay1 },
