@@ -21,3 +21,5 @@ alias images='podman image list --sort repository --format="table {{.Repository}
 alias pods='podman pod list'
 alias containers='podman ps --all --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.ID}}"'
 
+# go
+alias gclint='golangci-lint run'
