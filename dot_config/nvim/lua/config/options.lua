@@ -10,3 +10,7 @@ vim.o.wrap = true
 vim.o.linebreak = true
 
 vim.g.ai_cmp = false
+
+vim.opt.textwidth = 80
+vim.opt.formatoptions:remove({ "r", "o" })
+vim.opt.colorcolumn = "81"
