@@ -13,6 +13,7 @@ linters:
     - modernize
     - nilerr
     - nolintlint
+    - protogetter
     - revive
     - sloglint
     - sqlclosecheck
