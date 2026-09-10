@@ -1,0 +1,13 @@
+prefix_rule(
+    pattern = ["git", ["push", "pull", "rebase", "reset", "clean"]],
+    decision = "forbidden",
+    match = ["git push origin main", "git pull --rebase", "git rebase main", "git reset --hard", "git clean -fd"],
+    not_match = ["git status"],
+)
+
+prefix_rule(
+    pattern = ["git", ["show", "status", "diff", "log", "ls-files", "grep", "blame", "rev-parse"]],
+    decision = "allow",
+    match = ["git show HEAD", "git status --short", "git diff --stat", "git log --oneline", "git ls-files", "git grep TODO", "git blame README.md", "git rev-parse HEAD"],
+    not_match = ["git push", "git pull", "git rebase", "git reset", "git clean"],
+)

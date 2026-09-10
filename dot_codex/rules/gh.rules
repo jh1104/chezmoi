@@ -1,0 +1,20 @@
+prefix_rule(
+    pattern = ["gh", "pr", ["list", "view", "diff", "status", "checks"]],
+    decision = "allow",
+    match = ["gh pr list", "gh pr view 123", "gh pr diff 123", "gh pr status", "gh pr checks 123"],
+    not_match = ["gh pr create", "gh pr edit 123", "gh pr merge 123", "gh pr comment 123"],
+)
+
+prefix_rule(
+    pattern = ["gh", "run", ["list", "view", "watch"]],
+    decision = "allow",
+    match = ["gh run list", "gh run view 123 --log-failed", "gh run watch 123"],
+    not_match = ["gh run rerun 123", "gh run cancel 123", "gh run delete 123"],
+)
+
+prefix_rule(
+    pattern = ["gh", "repo", ["view", "list"]],
+    decision = "allow",
+    match = ["gh repo view", "gh repo list"],
+    not_match = ["gh repo create", "gh repo edit", "gh repo delete"],
+)

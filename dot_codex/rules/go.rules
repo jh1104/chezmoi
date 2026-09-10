@@ -1,0 +1,21 @@
+# Allow the requested Go development commands.
+prefix_rule(
+    pattern = ["golangci-lint", "run"],
+    decision = "allow",
+    match = ["golangci-lint run", "golangci-lint run ./..."],
+    not_match = ["golangci-lint fmt"],
+)
+
+prefix_rule(
+    pattern = ["go", ["build", "vet", "fmt", "test"]],
+    decision = "allow",
+    match = ["go build ./...", "go vet ./...", "go fmt ./...", "go test ./..."],
+    not_match = ["go run main.go", "go install example.com/tool@latest"],
+)
+
+prefix_rule(
+    pattern = ["go", "mod", "tidy"],
+    decision = "allow",
+    match = ["go mod tidy", "go mod tidy -v"],
+    not_match = ["go mod download", "go mod edit"],
+)
