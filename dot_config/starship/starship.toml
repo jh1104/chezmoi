@@ -15,6 +15,8 @@ $bun\
 $rust\
 $golang\
 $php\
+$python\
+$docker_context\
 $time\
 $hostname\
 \n$character"""
