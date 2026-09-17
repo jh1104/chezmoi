@@ -1,0 +1,14 @@
+# ls
+alias ls="ls -G"
+alias l="ls"
+alias ll="ls -lhD ' %Y-%m-%d %H:%M '"
+alias llt="ls -lhtD ' %Y-%m-%d %H:%M '"
+alias la="ls -lahD ' %Y-%m-%d %H:%M '"
+alias lat="ls -lahtD ' %Y-%m-%d %H:%M '"
+
+# ip
+alias ip-list="
+ifconfig | \
+grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | \
+grep -Eo '([0-9]*\.){3}[0-9]*' | \
+grep -v '127.0.0.1'"

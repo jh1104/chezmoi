@@ -1,5 +1,11 @@
 {{- if ne .chezmoi.os "darwin" }}
+.zshrc.local.darwin
+.alias.darwin
 .config/karabiner/
 Library/KeyBindings/
 {{- end }}
+
+{{- if ne .chezmoi.os "linux" }}
+.zshrc.local.linux
+.alias.linux
 {{- end }}
