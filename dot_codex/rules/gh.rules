@@ -1,14 +1,14 @@
 prefix_rule(
-    pattern = ["gh", "pr", ["list", "view", "diff", "status", "checks"]],
-    decision = "allow",
+  pattern = ["gh", "pr", ["list", "view", "diff", "status", "checks"]],
+  decision = "allow",
 )
 
 prefix_rule(
-    pattern = ["gh", "run", ["list", "view", "watch"]],
-    decision = "allow",
+  pattern = ["gh", "run", ["list", "view", "watch"]],
+  decision = "allow",
 )
 
 prefix_rule(
-    pattern = ["gh", "repo", ["view", "list"]],
-    decision = "allow",
+  pattern = ["gh", "repo", ["view", "list"]],
+  decision = "allow",
 )
