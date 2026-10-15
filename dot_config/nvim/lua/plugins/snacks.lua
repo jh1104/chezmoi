@@ -12,6 +12,9 @@ return {
           exclude = { "gen" },
         },
       },
+      config = function(opts)
+        opts.jump.reuse_win = false
+      end,
     },
   },
 }
