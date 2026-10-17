@@ -1,10 +1,13 @@
 # kubernetes
-alias k='kubectl'
+if commnad -v kubectl > /dev/null 2>&1; then
+  alias k='kubectl'
+fi
 
 # podman
-alias p='podman'
-alias docker='podman'
-alias images='podman image list --sort repository --format="table {{.Repository}}:{{.Tag}}\t{{.Created}}\t{{.Size}}\t{{.ID}}"'
-alias pods='podman pod list'
-alias containers='podman ps --all --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.ID}}"'
-
+if command -v podman > /dev/null 2>&1; then
+  alias p='podman'
+  alias docker='podman'
+  alias images='podman image list --sort repository --format="table {{.Repository}}:{{.Tag}}\t{{.Created}}\t{{.Size}}\t{{.ID}}"'
+  alias pods='podman pod list'
+  alias containers='podman ps --all --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.ID}}"'
+fi
